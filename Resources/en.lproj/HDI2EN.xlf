@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_HeaderFirstName" resname="HDI2_HeaderFirstName">
+				<source>First name</source>
+				<target>First name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderLastName" resname="HDI2_HeaderLastName">
+				<source>Last name</source>
+				<target>Last name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_HeaderLanguage" resname="HDI2_HeaderLanguage">
+				<source>Language</source>
+				<target>Language</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ListOfPupils" resname="HDI2_ListOfPupils">
+				<source>List of pupils</source>
+				<target>List of pupils</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EatsMeat" resname="HDI2_EatsMeat">
+				<source>Eats meat</source>
+				<target>Eats meat</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>Trace</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnViewAll" resname="HDI2_BtnViewAll">
+				<source>View all</source>
+				<target>View all</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ViewPupilsSpeaking" resname="HDI2_ViewPupilsSpeaking">
+				<source>View pupils speaking</source>
+				<target>View pupils speaking</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WatermarkEntities" resname="HDI2_WatermarkEntities">
+				<source>ENTITIES</source>
+				<target>ENTITIES</target>
+			</trans-unit>
+			<trans-unit id="HDI2_WatermarkRecords" resname="HDI2_WatermarkRecords">
+				<source>RECORDS</source>
+				<target>RECORDS</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnUpdateCurrentSelection" resname="HDI2_BtnUpdateCurrentSelection">
+				<source>Update current selection</source>
+				<target>Update current selection</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EntitySelection" resname="HDI2_EntitySelection">
+				<source>Entity selection</source>
+				<target>Entity selection</target>
+			</trans-unit>
+			<trans-unit id="HDI2_RecordsSelection" resname="HDI2_RecordsSelection">
+				<source>Records selection</source>
+				<target>Records selection</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnQuery" resname="HDI2_BtnQuery">
+				<source>Query</source>
+				<target>Query</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnUpdateEntitySelection" resname="HDI2_BtnUpdateEntitySelection">
+				<source>Update entity selection</source>
+				<target>Update entity selection</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

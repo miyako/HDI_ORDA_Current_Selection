@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="Project/Sources/TableForms" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Info_Input_Title" resname="Info_Input_Title">
+				<source>INFO</source>
+				<target>INFO</target>
+			</trans-unit>
+			<trans-unit id="Info_Input_ID" resname="Info_Input_ID">
+				<source>ID : </source>
+				<target>ID : </target>
+			</trans-unit>
+			<trans-unit id="Info_Output_Page" resname="Info_Output_Page">
+				<source>Page:</source>
+				<target>ページ:</target>
+			</trans-unit>
+			<trans-unit id="Info_Output_Title" resname="Info_Output_Title">
+				<source>Title</source>
+				<target>タイトル</target>
+			</trans-unit>
+			<trans-unit id="Pupil_Input_Title" resname="Pupil_Input_Title">
+				<source>Employee</source>
+				<target>生徒</target>
+			</trans-unit>
+			<trans-unit id="Pupil_ID" resname="Pupil_ID">
+				<source>ID : </source>
+				<target>ID : </target>
+			</trans-unit>
+			<trans-unit id="Pupil_FirstName" resname="Pupil_FirstName">
+				<source>firstname : </source>
+				<target>名 : </target>
+			</trans-unit>
+			<trans-unit id="Pupil_LastName" resname="Pupil_LastName">
+				<source>lastName : </source>
+				<target>姓 : </target>
+			</trans-unit>
+			<trans-unit id="Pupil_Input_ManagerID" resname="Pupil_Input_ManagerID">
+				<source>managerID : </source>
+				<target>マネージャーID : </target>
+			</trans-unit>
+			<trans-unit id="Pupil_Input_EmployerID" resname="Pupil_Input_EmployerID">
+				<source>employerID : </source>
+				<target>雇用者ID : </target>
+			</trans-unit>
+			<trans-unit id="Pupil_Input_Salary" resname="Pupil_Input_Salary">
+				<source>salary : </source>
+				<target>給与 : </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

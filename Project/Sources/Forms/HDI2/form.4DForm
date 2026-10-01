@@ -60,7 +60,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information3": {
 					"type": "input",
@@ -80,7 +81,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Line9": {
 					"type": "line",
@@ -89,7 +91,7 @@
 					"width": 720,
 					"height": 3,
 					"sizingX": "grow",
-					"stroke": "#696969"
+					"class": "muted"
 				}
 			}
 		},
@@ -113,7 +115,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"listBoxSave": {
 					"type": "listbox",
@@ -139,9 +142,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -150,7 +150,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "First name",
+								"text": ":xliff:HDI2_HeaderFirstName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -161,7 +161,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column2",
@@ -169,9 +170,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -180,7 +178,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "Last name",
+								"text": ":xliff:HDI2_HeaderLastName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -191,7 +189,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column3",
@@ -199,14 +198,11 @@
 							"width": 125,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header3",
-								"text": "Language",
+								"text": ":xliff:HDI2_HeaderLanguage",
 								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "automatic"
@@ -217,9 +213,13 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text6": {
 					"type": "text",
@@ -231,7 +231,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "List of pupils"
+					"text": ":xliff:HDI2_ListOfPupils",
+					"stroke": "automatic"
 				},
 				"Text": {
 					"type": "text",
@@ -240,7 +241,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"Check Box4": {
 					"type": "checkbox",
@@ -250,7 +252,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -261,14 +263,14 @@
 					"top": 660,
 					"left": 210,
 					"width": 170,
-					"height": 20,
 					"sizingY": "move",
-					"text": "View all",
+					"text": ":xliff:HDI2_BtnViewAll",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
@@ -291,7 +293,7 @@
 					"width": 720,
 					"height": 3,
 					"sizingX": "grow",
-					"stroke": "#696969"
+					"class": "muted"
 				},
 				"Text2": {
 					"type": "text",
@@ -301,7 +303,8 @@
 					"height": 17,
 					"sizingY": "move",
 					"textAlign": "right",
-					"text": "View pupils speaking"
+					"text": ":xliff:HDI2_ViewPupilsSpeaking",
+					"stroke": "automatic"
 				},
 				"information5": {
 					"type": "input",
@@ -321,7 +324,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text12": {
 					"type": "text",
@@ -329,11 +333,11 @@
 					"left": 40,
 					"width": 340,
 					"height": 58,
-					"stroke": "#D8D8D8",
 					"textAlign": "center",
 					"fontFamily": "System Font",
 					"fontSize": 48,
-					"text": "ENTITIES"
+					"text": ":xliff:HDI2_WatermarkEntities",
+					"class": "watermark"
 				},
 				"Text13": {
 					"type": "text",
@@ -341,11 +345,11 @@
 					"left": 620,
 					"width": 340,
 					"height": 58,
-					"stroke": "#D8D8D8",
 					"textAlign": "center",
 					"fontFamily": "System Font",
 					"fontSize": 48,
-					"text": "RECORDS"
+					"text": ":xliff:HDI2_WatermarkRecords",
+					"class": "watermark"
 				},
 				"3D Button": {
 					"type": "button",
@@ -354,7 +358,7 @@
 					"width": 200,
 					"height": 120,
 					"focusable": false,
-					"text": "Update current selection",
+					"text": ":xliff:HDI2_BtnUpdateCurrentSelection",
 					"icon": "/RESOURCES/Images/Right.png",
 					"method": "ObjectMethods/3D Button.4dm",
 					"events": [
@@ -367,10 +371,10 @@
 					"left": 40,
 					"width": 340,
 					"height": 20,
-					"stroke": "#777777",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Entity selection"
+					"text": ":xliff:HDI2_EntitySelection",
+					"class": "hint"
 				},
 				"Text3": {
 					"type": "text",
@@ -378,10 +382,10 @@
 					"left": 620,
 					"width": 340,
 					"height": 20,
-					"stroke": "#777777",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Records selection"
+					"text": ":xliff:HDI2_RecordsSelection",
+					"class": "hint"
 				},
 				"Sous formulaire": {
 					"type": "subform",
@@ -429,9 +433,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -440,7 +441,7 @@
 							],
 							"header": {
 								"name": "Header4",
-								"text": "First name",
+								"text": ":xliff:HDI2_HeaderFirstName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -451,7 +452,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column5",
@@ -459,9 +461,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -470,7 +469,7 @@
 							],
 							"header": {
 								"name": "Header5",
-								"text": "Last name",
+								"text": ":xliff:HDI2_HeaderLastName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -481,7 +480,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column6",
@@ -489,14 +489,11 @@
 							"width": 125,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header9",
-								"text": "Language",
+								"text": ":xliff:HDI2_HeaderLanguage",
 								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "automatic"
@@ -507,9 +504,13 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text10": {
 					"type": "text",
@@ -517,10 +518,10 @@
 					"left": 40,
 					"width": 340,
 					"height": 20,
-					"stroke": "#777777",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Entity selection"
+					"text": ":xliff:HDI2_EntitySelection",
+					"class": "hint"
 				},
 				"listBoxSave3": {
 					"type": "listbox",
@@ -546,9 +547,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -557,7 +555,7 @@
 							],
 							"header": {
 								"name": "Header10",
-								"text": "First name",
+								"text": ":xliff:HDI2_HeaderFirstName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -568,7 +566,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column11",
@@ -576,9 +575,6 @@
 							"width": 100,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -587,7 +583,7 @@
 							],
 							"header": {
 								"name": "Header11",
-								"text": "Last name",
+								"text": ":xliff:HDI2_HeaderLastName",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -598,7 +594,8 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column12",
@@ -606,14 +603,11 @@
 							"width": 125,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"header": {
 								"name": "Header12",
-								"text": "Language",
+								"text": ":xliff:HDI2_HeaderLanguage",
 								"stroke": "automatic",
 								"textAlign": "left",
 								"verticalAlign": "automatic"
@@ -624,9 +618,13 @@
 								"fill": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
-							}
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Text15": {
 					"type": "text",
@@ -634,11 +632,11 @@
 					"left": 40,
 					"width": 340,
 					"height": 58,
-					"stroke": "#D8D8D8",
 					"textAlign": "center",
 					"fontFamily": "System Font",
 					"fontSize": 48,
-					"text": "ENTITIES"
+					"text": ":xliff:HDI2_WatermarkEntities",
+					"class": "watermark"
 				},
 				"Text8": {
 					"type": "text",
@@ -647,7 +645,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"Text5": {
 					"type": "text",
@@ -656,7 +655,8 @@
 					"width": 1,
 					"height": 17,
 					"fontWeight": "bold",
-					"text": "Eats meat"
+					"text": ":xliff:HDI2_EatsMeat",
+					"stroke": "automatic"
 				},
 				"Text9": {
 					"type": "text",
@@ -664,24 +664,24 @@
 					"left": 620,
 					"width": 340,
 					"height": 20,
-					"stroke": "#777777",
 					"textAlign": "center",
 					"fontWeight": "bold",
-					"text": "Records selection"
+					"text": ":xliff:HDI2_RecordsSelection",
+					"class": "hint"
 				},
 				"Button1": {
 					"type": "button",
 					"top": 600,
 					"left": 810,
 					"width": 150,
-					"height": 20,
 					"sizingY": "move",
-					"text": "Query",
+					"text": ":xliff:HDI2_BtnQuery",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"information2": {
 					"type": "input",
@@ -701,7 +701,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information6": {
 					"type": "input",
@@ -721,7 +722,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text4": {
 					"type": "text",
@@ -733,7 +735,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "List of pupils"
+					"text": ":xliff:HDI2_ListOfPupils",
+					"stroke": "automatic"
 				},
 				"Line1": {
 					"type": "line",
@@ -742,7 +745,7 @@
 					"width": 720,
 					"height": 3,
 					"sizingX": "grow",
-					"stroke": "#696969"
+					"class": "muted"
 				},
 				"Check Box1": {
 					"type": "checkbox",
@@ -752,7 +755,7 @@
 					"height": 20,
 					"sizingY": "move",
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -764,11 +767,11 @@
 					"left": 620,
 					"width": 340,
 					"height": 58,
-					"stroke": "#D8D8D8",
 					"textAlign": "center",
 					"fontFamily": "System Font",
 					"fontSize": 48,
-					"text": "RECORDS"
+					"text": ":xliff:HDI2_WatermarkRecords",
+					"class": "watermark"
 				},
 				"3D Button1": {
 					"type": "button",
@@ -777,7 +780,7 @@
 					"width": 200,
 					"height": 120,
 					"focusable": false,
-					"text": "Update entity selection",
+					"text": ":xliff:HDI2_BtnUpdateEntitySelection",
 					"icon": "/RESOURCES/Images/Left.png",
 					"method": "ObjectMethods/3D Button1.4dm",
 					"events": [

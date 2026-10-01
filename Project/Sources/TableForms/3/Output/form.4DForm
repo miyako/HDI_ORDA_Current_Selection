@@ -58,7 +58,8 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": ":xliff:Pupil_ID",
+					"stroke": "automatic"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +68,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "firstname : "
+					"text": ":xliff:Pupil_FirstName",
+					"stroke": "automatic"
 				},
 				"S3_Text": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "lastName : "
+					"text": ":xliff:Pupil_LastName",
+					"stroke": "automatic"
 				},
 				"Rectangle8": {
 					"type": "rectangle",
@@ -85,7 +88,8 @@
 					"width": 1025,
 					"height": 25,
 					"sizingX": "grow",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"fill": "automatic"
 				},
 				"S1_Field": {
 					"type": "input",
@@ -113,7 +117,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S2_Field": {
 					"type": "input",
@@ -123,7 +128,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Pupil:3]firstName:2",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -138,7 +143,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"S3_Field": {
 					"type": "input",
@@ -148,7 +154,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[Pupil:3]lastName:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -163,14 +169,15 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Line9": {
 					"type": "line",
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Line10": {
 					"type": "line",
@@ -178,14 +185,14 @@
 					"left": 1025,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Line11": {
 					"type": "line",
 					"top": -5,
 					"left": 937,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Splitter2": {
 					"type": "splitter",
@@ -204,7 +211,7 @@
 					"top": -5,
 					"left": 831,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Splitter3": {
 					"type": "splitter",
@@ -223,7 +230,7 @@
 					"top": -5,
 					"left": 728,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Splitter4": {
 					"type": "splitter",
@@ -242,7 +249,7 @@
 					"top": -5,
 					"left": 416,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Splitter5": {
 					"type": "splitter",
@@ -261,7 +268,7 @@
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"class": "grid-line"
 				},
 				"Splitter6": {
 					"type": "splitter",

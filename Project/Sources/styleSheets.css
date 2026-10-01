@@ -1,0 +1,77 @@
+/* Colour-scheme aware styles. Light/dark values are resolved by 4D from the system appearance. */
+
+@media (prefers-color-scheme: light) {
+	.panel {
+		fill: #C0C0C0;
+	}
+
+	.muted {
+		stroke: #696969;
+	}
+
+	.hint {
+		stroke: #777777;
+	}
+
+	.link {
+		stroke: #1E90FF;
+	}
+
+	.watermark {
+		stroke: #D8D8D8;
+	}
+
+	.grid-line {
+		stroke: #A8A8A8;
+	}
+
+	.band-shadow {
+		fill: #808080;
+	}
+
+	.header-band {
+		fill: #B1C4DD;
+	}
+
+	.error-text {
+		stroke: #212121;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.panel {
+		fill: #3A3A3A;
+	}
+
+	.muted {
+		stroke: #A0A0A0;
+	}
+
+	.hint {
+		stroke: #A0A0A0;
+	}
+
+	.link {
+		stroke: #5CB8FF;
+	}
+
+	.watermark {
+		stroke: #3A3A3A;
+	}
+
+	.grid-line {
+		stroke: #5A5A5A;
+	}
+
+	.band-shadow {
+		fill: #1A1A1A;
+	}
+
+	.header-band {
+		fill: #2F3E52;
+	}
+
+	.error-text {
+		stroke: #212121;
+	}
+}

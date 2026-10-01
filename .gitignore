@@ -14,3 +14,6 @@ Documentation/
 
 # Settings
 Settings/
+
+# 4D resource cache (generated)
+Resources/Cache/

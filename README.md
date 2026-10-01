@@ -15,11 +15,13 @@ Classic 4D code works on the *current selection* of a table; ORDA works on *enti
 
 | Tab | What it shows |
 |-----|---------------|
-| Description | Overview of the technique |
-| Current selection to entity selection | Turn the current selection into an entity selection |
-| Entity selection to current selection | Push an entity selection back into the current selection |
+| 1 | Introduction to the technique |
+| 2 | *Update current selection* -- `USE ENTITY SELECTION` pushes an entity selection into the current selection of `[Pupil]` |
+| 3 | *Update entity selection* -- `Create entity selection` builds an entity selection from the current selection |
 
-Each tab displays an **entity selection** list box and a **records selection** list box next to each other, so you can see both representations change as you click.
+(Tab titles and descriptions are read from the `[INFO]` table at runtime.)
+
+Tabs 2 and 3 display an **entity selection** list box and a **records selection** list box next to each other, so you can see both representations change as you click.
 
 ## Features
 

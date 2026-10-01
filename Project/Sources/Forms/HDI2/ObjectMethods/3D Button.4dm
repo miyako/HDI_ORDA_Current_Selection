@@ -1,0 +1,5 @@
+If (btnTrace)
+	TRACE:C157
+End if 
+
+USE ENTITY SELECTION:C1513(Form:C1466.pupils)

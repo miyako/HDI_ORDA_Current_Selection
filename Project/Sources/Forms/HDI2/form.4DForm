@@ -1,0 +1,790 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 78,
+	"markerBreak": 78,
+	"markerFooter": 78,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information4": {
+					"type": "input",
+					"top": 300,
+					"left": 60,
+					"width": 860,
+					"height": 150,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information3": {
+					"type": "input",
+					"top": 80,
+					"left": 60,
+					"width": 860,
+					"height": 193,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 250,
+					"left": 140,
+					"width": 720,
+					"height": 3,
+					"sizingX": "grow",
+					"stroke": "#696969"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 70,
+					"left": 60,
+					"width": 860,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"listBoxSave": {
+					"type": "listbox",
+					"top": 280,
+					"left": 40,
+					"width": 340,
+					"height": 299,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.pupils",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSave.4dm",
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "First name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Last name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "This:C1470.language",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header3",
+								"text": "Language",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": " 9",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 210,
+					"left": 380,
+					"width": 240,
+					"height": 18,
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "List of pupils"
+				},
+				"Text": {
+					"type": "text",
+					"top": 298,
+					"left": 502,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 560,
+					"left": 410,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 660,
+					"left": 210,
+					"width": 170,
+					"height": 20,
+					"sizingY": "move",
+					"text": "View all",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"top": 620,
+					"left": 210,
+					"width": 170,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "_languages",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 150,
+					"left": 140,
+					"width": 720,
+					"height": 3,
+					"sizingX": "grow",
+					"stroke": "#696969"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 620,
+					"left": 40,
+					"width": 160,
+					"height": 17,
+					"sizingY": "move",
+					"textAlign": "right",
+					"text": "View pupils speaking"
+				},
+				"information5": {
+					"type": "input",
+					"top": 280,
+					"left": 400,
+					"width": 200,
+					"height": 80,
+					"sizingX": "grow",
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 180,
+					"left": 40,
+					"width": 340,
+					"height": 58,
+					"stroke": "#D8D8D8",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 48,
+					"text": "ENTITIES"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 180,
+					"left": 620,
+					"width": 340,
+					"height": 58,
+					"stroke": "#D8D8D8",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 48,
+					"text": "RECORDS"
+				},
+				"3D Button": {
+					"type": "button",
+					"top": 400,
+					"left": 400,
+					"width": 200,
+					"height": 120,
+					"focusable": false,
+					"text": "Update current selection",
+					"icon": "/RESOURCES/Images/Right.png",
+					"method": "ObjectMethods/3D Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 250,
+					"left": 40,
+					"width": 340,
+					"height": 20,
+					"stroke": "#777777",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Entity selection"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 250,
+					"left": 620,
+					"width": 340,
+					"height": 20,
+					"stroke": "#777777",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Records selection"
+				},
+				"Sous formulaire": {
+					"type": "subform",
+					"top": 280,
+					"left": 610,
+					"width": 340,
+					"height": 299,
+					"sizingY": "grow",
+					"dataSourceTypeHint": "undefined",
+					"table": 3,
+					"listForm": "PupilsListe",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				}
+			}
+		},
+		{
+			"objects": {
+				"listBoxSave2": {
+					"type": "listbox",
+					"top": 280,
+					"left": 40,
+					"width": 340,
+					"height": 299,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"dataSource": "Form:C1466.pupils",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSave2.4dm",
+					"columns": [
+						{
+							"name": "Column4",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "First name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "This:C1470.lastName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Last name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer6",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "This:C1470.language",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header9",
+								"text": "Language",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": " 1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 250,
+					"left": 40,
+					"width": 340,
+					"height": 20,
+					"stroke": "#777777",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Entity selection"
+				},
+				"listBoxSave3": {
+					"type": "listbox",
+					"top": 280,
+					"left": 620,
+					"width": 340,
+					"height": 299,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "40px",
+					"table": 3,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/listBoxSave3.4dm",
+					"columns": [
+						{
+							"name": "Column10",
+							"dataSource": "[Pupil:3]firstName:2",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "First name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "[Pupil:3]lastName:3",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Last name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "[Pupil:3]language:4",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"header": {
+								"name": "Header12",
+								"text": "Language",
+								"stroke": "automatic",
+								"textAlign": "left",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": " 2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 180,
+					"left": 40,
+					"width": 340,
+					"height": 58,
+					"stroke": "#D8D8D8",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 48,
+					"text": "ENTITIES"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 158,
+					"left": 505,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 298,
+					"left": 497,
+					"width": 1,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Eats meat"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 250,
+					"left": 620,
+					"width": 340,
+					"height": 20,
+					"stroke": "#777777",
+					"textAlign": "center",
+					"fontWeight": "bold",
+					"text": "Records selection"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 600,
+					"left": 810,
+					"width": 150,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Query",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"information2": {
+					"type": "input",
+					"top": 70,
+					"left": 60,
+					"width": 810,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information6": {
+					"type": "input",
+					"top": 280,
+					"left": 400,
+					"width": 200,
+					"height": 80,
+					"sizingX": "grow",
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 210,
+					"left": 380,
+					"width": 240,
+					"height": 18,
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "List of pupils"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 150,
+					"left": 140,
+					"width": 720,
+					"height": 3,
+					"sizingX": "grow",
+					"stroke": "#696969"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 560,
+					"left": 410,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 180,
+					"left": 620,
+					"width": 340,
+					"height": 58,
+					"stroke": "#D8D8D8",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 48,
+					"text": "RECORDS"
+				},
+				"3D Button1": {
+					"type": "button",
+					"top": 400,
+					"left": 400,
+					"width": 200,
+					"height": 120,
+					"focusable": false,
+					"text": "Update entity selection",
+					"icon": "/RESOURCES/Images/Left.png",
+					"method": "ObjectMethods/3D Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}
